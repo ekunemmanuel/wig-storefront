@@ -1,1 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Brygada+1918:ital,wght@0,400..700;1,400..700&family=Gloock&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import "tailwindcss";
+
+
+@theme {
+
+    --font-header: 'Bodoni Moda SC', serif;
+    --font-body: 'Iosevka Charon', serif;
+
+    --color-primary: #fee7bd;
+    --color-secondary: #7b5a31;
+    --color-accent: #c79d6c;
+
+    --shadow-glow: 0 0 20px rgba(123, 90, 49, 0.4);
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-header leading-none ;
+}
+
+body {
+    @apply font-body leading-none bg-primary/30 text-secondary;
+}
+
+/* Luxury UI Components */
+.lux-input {
+    @apply bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-white/30 transition-colors uppercase tracking-widest;
+}
+
+.lux-button {
+    @apply bg-secondary text-primary font-bold uppercase tracking-widest py-3 rounded-lg hover:scale-[1.02] active:scale-[0.98] transition-all;
+}
+
+.shadow-glow {
+    box-shadow: var(--shadow-glow);
+}
+
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
