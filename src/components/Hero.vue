@@ -10,9 +10,10 @@
 
             <!-- Unified List for Images (Looping on Mobile, Grid on Desktop) -->
             <div v-for="(img, i) in displayImages" :key="i"
-              class="min-w-full lg:min-w-0 flex-1 h-full snap-center rounded-2xl overflow-hidden"
+              class="min-w-full lg:min-w-0 flex-1 h-full snap-center rounded-2xl overflow-hidden aspect-3/4 md:aspect-auto"
               :class="{ 'lg:hidden': i === 0 || i === displayImages.length - 1 }">
-              <img :src="`/${img}`" alt="Wig Style" class="w-full h-full object-cover">
+              <img :src="`/${img}`" alt="Wig Style" class="w-full h-full object-cover" :loading="i === 0 ? 'eager' : 'lazy'"
+                :fetchpriority="i === 0 ? 'high' : 'auto'" width="800" height="1200">
             </div>
           </div>
 
@@ -38,7 +39,8 @@
 
       <!-- Desktop Hero Image (Hidden on mobile as it's correctly placed in the carousel) -->
       <div class="hidden lg:block w-full h-full rounded-2xl overflow-hidden">
-        <img src="/hero.png" alt="" class="w-full h-full object-cover">
+        <img src="/hero.png" alt="" class="w-full h-full object-cover" fetchpriority="high" loading="eager" width="1200"
+          height="1600">
       </div>
     </div>
   </div>
