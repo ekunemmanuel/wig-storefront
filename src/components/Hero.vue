@@ -28,10 +28,10 @@
 
         <!-- Branding Text (Always at bottom) -->
         <div class="py-4 mt-auto">
-          <h1 class="text-[clamp(3.2rem,8vw,15rem)] font-bold">
+          <h1 class="text-[clamp(2.8rem,8vw,15rem)] font-bold">
             HairStrands
           </h1>
-          <p class="text-[clamp(1.5rem,8vw,7rem)] w-full opacity-80">
+          <p class="text-[clamp(1.5rem,5vw,4rem)] w-full opacity-80">
             Premium Wigs for Every Style
           </p>
         </div>
