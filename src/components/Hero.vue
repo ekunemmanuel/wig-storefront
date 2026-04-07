@@ -12,8 +12,8 @@
             <div v-for="(img, i) in displayImages" :key="i"
               class="min-w-full lg:min-w-0 flex-1 h-full snap-center rounded-2xl overflow-hidden aspect-3/4 md:aspect-auto"
               :class="{ 'lg:hidden': i === 0 || i === displayImages.length - 1 }">
-              <img :src="`/${img}`" alt="Wig Style" class="w-full h-full object-cover" :loading="i === 0 ? 'eager' : 'lazy'"
-                :fetchpriority="i === 0 ? 'high' : 'auto'" width="800" height="1200">
+              <img :src="`/${img}`" alt="Wig Style" class="w-full h-full object-cover" loading="eager" width="800"
+                height="1200">
             </div>
           </div>
 
