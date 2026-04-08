@@ -25,9 +25,9 @@
 
 <script lang="ts" setup>
 const featuredWigs = [
-  { name: 'Seamless Silk Straight', category: 'Straight', price: '$299.00', img: 'featured-1.png' },
-  { name: 'Honey Aura Curls', category: 'Curly', price: '$349.00', img: 'featured-2.png' },
-  { name: 'Urban Muse Gray Bob', category: 'Bob', price: '$279.00', img: 'featured-3.png' },
-  { name: 'Velvet Wine Waves', category: 'Lace Front', price: '$389.00', img: 'featured-4.png' }
+  { name: 'Seamless Silk Straight', category: 'Straight', price: '₦299,000', img: 'featured-1.png' },
+  { name: 'Honey Aura Curls', category: 'Curly', price: '₦349,000', img: 'featured-2.png' },
+  { name: 'Urban Muse Gray Bob', category: 'Bob', price: '₦279,000', img: 'featured-3.png' },
+  { name: 'Velvet Wine Waves', category: 'Lace Front', price: '₦389,000', img: 'featured-4.png' }
 ]
 </script>
